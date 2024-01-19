@@ -1,0 +1,329 @@
+/*----- Fonts-------*/
+@import url('https://fonts.googleapis.com/css2?family=Bai+Jamjuree:wght@400;600&display=swap');
+
+/*------- Variables -------*/
+:root {
+
+    /*-- Colors --*/
+    /*Primary Colours*/
+    --Strong-cyan: hsl(171, 66%, 44%);
+    --Light-blue: hsl(233, 100%, 69%);
+    /*Neutral Colours*/
+    --Dark-grayish-blue: hsl(210, 10%, 33%);
+    --Grayish-blue: hsl(201, 11%, 66%);
+
+    /*---- Font & Styling ----*/
+    --Body-font: 'Bai Jamjuree', sans-serif;
+    --fs-h1: 3.05em;
+    --fs-h2: 2.44em;
+    --fs-h4: 1.95em;
+    --fs-button: 1.25em;
+    --fs-body: 1.125em;
+    --fs-caption: 0.8em
+    --fw-reg: 400;
+    --fw-bold: 600;
+}
+*,
+::after,
+::before {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+body{
+    background: rgb(252, 252, 252);
+}
+/*--- Header & Logo Section*/
+header.logo-container{
+    background: url(images/bg-header-desktop.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding-top: 96px;
+    padding-bottom: 48px;
+}
+header.logo-container img{
+    display: block;
+    margin-inline: auto;
+}
+/*--- Web Page Content Styling ---*/
+main.container{
+    font-family: var(--Body-font);
+    margin-inline: auto;
+    padding-inline: 1.2rem;
+}
+h2, h1, h4{
+    color: var(--Dark-grayish-blue);
+    font-weight: var(--fw-bold);
+}
+h1{
+    font-size: var(--fs-h1);
+    margin-block-end: 16px;
+}
+h2{
+    font-size: var(--fs-h2);
+}
+h4{
+    font-size: var(--fs-h4);
+}
+p{
+    font-size: var(--fs-body);
+    font-weight: var(--fw-reg);
+    display: inline-block;
+    max-width: 640px;
+    margin-inline: auto;
+    margin-block-end: 32px;
+    margin-block-start: 24px;
+    color: var(--Grayish-blue);
+}
+button{
+    cursor: pointer;
+    font-size: var(--fs-button);
+    padding: 12px 36px;
+    border-radius: 40px;
+    border: none;
+    background: none;
+    display: inline-block;
+    margin-right: 16px;
+    margin-block-start: 24px;
+    color: rgb(252, 252, 252);
+}
+button.iOS{
+    background: var(--Strong-cyan);
+    box-shadow: 1px 1px 2px 1px var(--Strong-cyan);
+}
+button.iOS:hover,
+button.iOS:active{
+    box-shadow: 2px 2px 3px 1px var(--Strong-cyan);
+}
+button.macOS{
+    background: var(--Light-blue);
+    box-shadow: 2px 2px 3px 2px var(--Light-blue);
+}
+button.macOS:hover,
+button.macOS:active{
+    box-shadow: 2px 2px 3px 1px var(--Light-blue);
+}
+/*--- Hero Section Styling ---*/
+.hero-section{
+    padding-block: 56px 48px;
+    text-align: center;
+}
+/*--- Features Section Styling ---*/
+.features-section{
+    text-align: center;
+    padding-block: 24px 32px;
+}
+.features-section .features-wrapper{
+    margin-top: 40px;
+    display: grid;
+    align-items: center;
+    justify-items: center;
+    gap: 32px;
+}
+.features-wrapper img{
+    position: relative;
+    left: -40px;
+    object-fit: cover;
+}
+.feature-wrap span{
+    display: block;
+    text-align: left;
+    position: relative;
+    top: -16px;
+}
+.feature-wrap span h4{
+    margin-block-end: 16px;
+}
+.feature-wrap span p{
+    margin-block:0 16px;
+    max-width: 475px;
+}
+/*------ Device Access Section Styling ---*/
+.access{
+    text-align: center;
+    margin-block-start: 48px;
+}
+.access img{
+    max-width: 80%;
+    height: auto;
+    object-fit: contain;
+    margin-block-start: 32px;
+}
+/*---- Functions Section Styling ---*/
+.functions-section{
+    text-align: center;
+}
+.functions-wrapper{
+    margin-block-start: 32px;
+    display: grid;
+    align-items: center;
+    justify-items: center;
+    gap: 32px;
+}
+.function__wrap{
+    max-width: 320px;
+    line-height: 2.0rem;
+}
+.function-wrap h4{
+    font-size: var(--fs-h4);
+}
+.function-wrap p{
+    margin-block: 0;
+    line-height: 1.6rem;
+}
+/*--- Partners Section Styling ---*/
+.partners-section{
+    margin-block-start: 48px;
+    display: grid;
+    gap: 40px;
+    align-items: center;
+    justify-items: center;
+}
+.partners-section img{
+    object-fit: contain;
+}
+/*--- CTA Section Styling ---*/
+.cta-section{
+    margin-block-start: 48px;
+    text-align: center;
+    padding-block-end: 48px;
+}
+/*--- Footer Section Styling ---*/
+footer.container{
+    font-family: var(--Body-font);
+    padding: 32px 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 32px;
+    background: rgb(245, 246, 248);
+}
+footer img.logo{
+    object-fit: contain;
+}
+footer ul{
+    text-align: left;
+    display: grid;
+    gap: 12px;
+}
+footer ul li{
+    list-style: none;
+    display: inline-block;
+    font-size: var(--fs-body);
+}
+footer ul li a{
+    text-decoration: none;
+    color: var(--Dark-grayish-blue);
+    font-weight: var(--fw-reg);
+}
+footer ul li a:hover, 
+footer ul li a:active{
+    color: var(--Strong-cyan);
+}
+footer .social-links img{
+    margin-left: 16px;
+    cursor: pointer;
+}
+.attribution { 
+    font-size: var(--fs-caption);
+    margin-inline-start: auto;
+    margin-block: 4px;
+    text-align: center;
+}
+.attribution a { 
+    color: hsl(228, 45%, 44%); 
+}
+/*---- Responsive Design ----*/
+@media (min-width: 768px){
+    .features-section .features-wrapper{
+        grid-template-columns: repeat(2, 1fr);
+    }
+    .features-wrapper img{
+        max-width: 100%;
+    }
+    .functions-wrapper{
+        grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));;
+    }
+    .partners-section {
+        grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+    }
+    footer.container{
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        justify-items: center;
+        align-items: center;
+    }
+    footer img.logo{
+        max-width: 50%;
+    }
+    footer ul{
+        grid-template-columns: repeat(3, 120px);
+        grid-template-rows: 1fr;
+        gap: 16px;
+    }
+    .attribution { 
+        grid-column: 2/3;
+    }
+}
+@media (max-width: 640px){
+    header.logo-container{
+        background-image: url(images/bg-header-mobile.png);
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+    .hero-section,
+    .features-section,
+    .access,
+    .functions-section,
+    .partners-section,
+    .cta-section{
+        padding-block: 16px 24px;
+    }
+    h1{
+        font-size: 2.62em;
+    }
+    h2{
+        font-size: 1.62em;
+    }
+    h4{
+        font-size: 1.3em;
+    }
+    p{
+        max-width: 100%;
+        font-size: 1.0em;
+    }
+    footer ul li{
+        font-size: 1.0rem;
+    }
+    .attribution{
+        font-size: .72em;
+    }
+    .features-wrapper img{
+        left: 0;
+        max-width: 100%;
+        display: block;
+        margin-inline: auto;
+    }
+    .feature-wrap span{
+        text-align: center;
+        top: 0;
+    }
+    .access img{
+        max-width: 100%;
+    }
+    .function__wrap{
+        max-width: 100%;
+    }
+    footer img.logo{
+        max-width: 24%;
+    }
+    footer ul{
+        text-align: center;
+    }
+    button{
+        padding: 6px 40px;
+        margin-bottom: 16px;
+    }
+}
