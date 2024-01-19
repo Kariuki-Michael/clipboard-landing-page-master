@@ -30,8 +30,8 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: [Add solution URL here](https://your-solution-url.com)
-- Live Site URL: [Add live site URL here](https://your-live-site-url.com)
+- Solution URL: [Solution URL](https://github.com/kariukimikael/clipboard-landing-page-master)
+- Live Site URL: [Live Site URL](https://kariukimikael.github.io/clipboard-landing-page-master/)
 
 ## My process
 
@@ -64,5 +64,5 @@ Improve on my responsive design skills.
 
 ## Author
 
-- Frontend Mentor - [@yourusername](https://www.frontendmentor.io/profile/yourusername)
-- Twitter - [@yourusername](https://www.twitter.com/kariukimikael)
+- Frontend Mentor - [@kariukimikael](https://www.frontendmentor.io/profile/KMichael017)
+- Twitter - [@kariukimikael](https://www.twitter.com/kariukimikael)
